@@ -106,20 +106,25 @@ nav a {
   position: relative;
   max-width: 700px;
   background: rgba(0,0,0,0.55);
-  padding: 32px 40px;
+  padding: 30px 40px;
   border-radius: 14px;
   color: white;
+   backdrop-filter: blur(6px);
   margin-left: 40px;
 }
 
 .page-hero-content h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 46px;
+  font-size: 48px;
   margin-bottom: 12px;
+  color: #ffffff;        /* FORCE PURE WHITE */
+  text-shadow: 0 6px 18px rgba(0,0,0,0.45);
 }
 
 .page-hero-content p {
   font-size: 18px;
+  color: #f8fafc;        /* soft white */
+  text-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
 /* ===============================
@@ -551,6 +556,7 @@ button {
     font-size: 16px;
   }
 }
+
 
 
 
