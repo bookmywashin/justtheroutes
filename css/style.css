@@ -144,21 +144,20 @@ body {
 ================================ */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr); /* FORCE 3 cards */
+  gap: 32px;
 }
+
 
 /* ===============================
    CARD
 ================================ */
 .card {
   background: #ffffff;
-  border-radius: 18px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
 }
 
 .card:hover {
@@ -168,25 +167,26 @@ body {
 
 .card img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 240px; /* controls card size */
   object-fit: cover;
 }
 
 
 .card-content {
-  padding: 18px;
+  padding: 16px;
 }
 
 .card-content h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
+  font-size: 17px;
+  margin-bottom: 6px;
 }
 
 .card-content p {
-  font-size: 14.5px;
-  line-height: 1.6;
-  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.55;
+  margin-bottom: 10px;
 }
+
 
 
 /* ===============================
@@ -441,6 +441,22 @@ h2 {
 
   .card-content h3 {
     font-size: 17px;
+  }
+}
+
+@media (max-width: 992px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 220px;
   }
 }
 
