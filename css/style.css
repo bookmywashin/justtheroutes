@@ -46,10 +46,14 @@ body {
    LAYOUT HELPERS
 ================================ */
 .container {
+  width: 100%;
   max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
+
 
 .section-light {
   padding: 80px 0;
@@ -364,10 +368,14 @@ form button {
    GLOBAL LAYOUT SYSTEM
 ================================ */
 .container {
+  width: 100%;
   max-width: 1200px;
-  margin: auto;
-  padding: 0 24px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
+
 
 .section-white {
   padding: 80px 0;
@@ -459,6 +467,7 @@ h2 {
     height: 220px;
   }
 }
+
 
 
 
