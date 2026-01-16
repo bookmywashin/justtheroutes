@@ -298,3 +298,45 @@ section {
     margin-top: 10px;
   }
 }
+
+/* =====================
+   PAGE HERO (GLOBAL)
+===================== */
+
+.page-hero {
+  min-height: 55vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgba(10, 40, 30, 0.7),
+    rgba(10, 40, 30, 0.3)
+  );
+}
+
+.page-hero-content {
+  position: relative;
+  color: white;
+  max-width: 900px;
+  padding: 0 24px;
+  margin: auto;
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+}
+
+.page-hero p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
