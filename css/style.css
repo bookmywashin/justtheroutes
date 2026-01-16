@@ -556,6 +556,20 @@ button {
   }
 }
 
+.about-intro {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.about-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #111;
+}
+
 
 
 
