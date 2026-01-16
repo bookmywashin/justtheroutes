@@ -340,3 +340,21 @@ section {
   margin-top: 10px;
 }
 
+.read-more-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.read-more-content.open {
+  max-height: 600px;
+}
+
+.read-more-btn {
+  margin-top: 10px;
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+}
+
