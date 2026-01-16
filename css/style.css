@@ -270,4 +270,32 @@ form button {
   z-index: 9999;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 10px 0;
+  }
+}
+
 
