@@ -148,8 +148,9 @@ body {
 ================================ */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* FORCE 3 cards */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 32px;
+  width: 100%;
 }
 
 
@@ -467,6 +468,7 @@ h2 {
     height: 220px;
   }
 }
+
 
 
 
