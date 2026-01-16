@@ -298,4 +298,11 @@ form button {
   }
 }
 
+.top-ticker {
+  background: #0f172a;
+  color: white;
+  font-size: 14px;
+  padding: 6px 0;
+}
+
 
