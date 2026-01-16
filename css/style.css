@@ -213,7 +213,7 @@ nav a {
    ABOUT PAGE (FINAL – CENTERED)
 ================================ */
 .about-intro {
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 0;
   text-align: center;
 }
@@ -414,3 +414,4 @@ textarea {
     display: block;
   }
 }
+
