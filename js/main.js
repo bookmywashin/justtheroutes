@@ -1,3 +1,16 @@
+document.addEventListener("DOMContentLoaded", () => {
+  loadPartial("contact-bar", "partials/contact-bar.html");
+});
+
+function loadPartial(elementId, filePath) {
+  fetch(filePath)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById(elementId).innerHTML = data;
+    })
+    .catch(error => console.error("Error loading partial:", error));
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".read-more-btn");
 
@@ -18,3 +31,4 @@ const nav = document.getElementById("navMenu");
 toggle.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
+
