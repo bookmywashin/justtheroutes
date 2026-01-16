@@ -557,18 +557,19 @@ button {
 }
 
 .about-intro {
-  padding-top: 60px;
-  padding-bottom: 20px;
+  padding-top: 40px;   /* reduced gap from hero */
+  padding-bottom: 10px; /* minimal space before content */
   text-align: center;
 }
 
 .about-title {
   font-family: 'Playfair Display', serif;
-  font-size: 38px;
+  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  margin-bottom: 0; /* important: removes extra gap */
   color: #111;
 }
+
 
 
 
