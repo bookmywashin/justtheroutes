@@ -389,3 +389,40 @@ button {
     font-size: 16px;
   }
 }
+/* Custom Package Card */
+.custom-package {
+  background: linear-gradient(135deg, #0f2a44, #143a5c);
+  color: #ffffff;
+  border: 2px dashed rgba(255,255,255,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-package:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.custom-package h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.custom-package p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.custom-cta {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #ffd479;
+}
+
