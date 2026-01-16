@@ -407,6 +407,16 @@ h2 {
   }
 }
 
+.timeline-item p {
+  max-width: 750px;
+  text-align: left;
+  font-size: 16.2px;
+}
+
+.timeline-item h3 {
+  margin-bottom: 14px;
+}
+
 
 
 
