@@ -104,7 +104,7 @@ nav a {
 
 .page-hero-content {
   position: relative;
-  max-width: 700px;
+  max-width: 1000px;
   background: rgba(0,0,0,0.45);
   padding: 30px 40px;
   border-radius: 14px;
@@ -555,6 +555,7 @@ button {
     font-size: 16px;
   }
 }
+
 
 
 
