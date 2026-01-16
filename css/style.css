@@ -503,6 +503,55 @@ button {
 .btn-primary:hover {
   background: #0e7f63;
 }
+/* ABOUT PAGE STYLING */
+
+.about-section {
+  padding: 80px 0;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  margin: 60px 0 20px;
+  color: #111827;
+}
+
+.about-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+.about-highlight {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 40px;
+  color: #0a5c45;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .about-content h2 {
+    font-size: 26px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+}
+
 
 
 
