@@ -557,8 +557,8 @@ button {
 }
 
 .about-intro {
-  padding-top: 40px;   /* reduced gap from hero */
-  padding-bottom: 10px; /* minimal space before content */
+  padding-top: 30px;   /* reduced gap from hero */
+  padding-bottom: 0px; /* minimal space before content */
   text-align: center;
 }
 
@@ -569,6 +569,7 @@ button {
   margin-bottom: 0; /* important: removes extra gap */
   color: #111;
 }
+
 
 
 
