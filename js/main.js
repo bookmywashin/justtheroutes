@@ -33,4 +33,25 @@ function initReadMoreButtons() {
             : "Read more";
         }
       });
-      button.classList.add("read-more-initialize
+      button.classList.add("read-more-initialized");
+    }
+  });
+}
+
+// ===== Mobile Menu Toggle =====
+function initMobileMenu() {
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("navMenu");
+
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  }
+}
+
+// ===== Optional: Global Contact Ticker =====
+const contactBar = document.getElementById("contact-bar");
+if(contactBar){
+  contactBar.innerHTML = '<marquee>Call: +91-XXXXXXXXXX | WhatsApp: +91-XXXXXXXXXX | Email: info@justtheroutes.com</marquee>';
+}
