@@ -305,4 +305,42 @@ form button {
   padding: 6px 0;
 }
 
+/* ===============================
+   ITINERARY TIMELINE
+================================ */
+.timeline {
+  position: relative;
+  margin-top: 40px;
+  padding-left: 30px;
+  border-left: 3px solid #0a5c45;
+}
+
+.timeline-item {
+  margin-bottom: 50px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  background: #0a5c45;
+  border-radius: 50%;
+}
+
+.timeline-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.timeline-item p {
+  color: #4b5563;
+  margin-bottom: 10px;
+}
+
 
