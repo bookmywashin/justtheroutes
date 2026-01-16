@@ -4,12 +4,14 @@
   <script src="js/main.js" defer></script>
   <meta charset="UTF-8">
   <title>Kashmir Tour Packages – JustTheRoutes</title>
+  <meta name="description" content="Explore curated Kashmir tour packages by JustTheRoutes. Adventure, honeymoon, family, and luxury trips designed for unforgettable experiences.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:wght@600&display=swap">
 </head>
 <body>
 <div id="contact-bar"></div>
-  
+
 <header class="navbar">
   <div class="logo">JustTheRoutes</div>
   <div class="menu-toggle" id="menuToggle">☰</div>
@@ -18,74 +20,152 @@
     <a href="destinations.html">Destinations</a>
     <a href="packages.html">Packages</a>
     <a href="itinerary.html">Itinerary</a>
+    <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
 
-<section class="page-hero" style="background-image:url('assets/images/gulmarg.jpg')">
+<!-- HERO -->
+<section class="page-hero" style="background-image:url('assets/images/packages-hero.jpg')">
   <div class="page-hero-content">
-    <h1>Kashmir Tour Packages</h1>
-    <p>Curated journeys by locals</p>
+    <h1>Curated Kashmir Packages</h1>
+    <p>Handpicked routes. Unforgettable experiences.</p>
   </div>
 </section>
 
-<section class="section-white">
+<!-- PACKAGES GRID -->
+<section class="section-light">
   <div class="container">
     <div class="card-grid">
 
-     <div class="card">
-  <img src="assets/images/package-adventure.jpg">
-  <div class="card-content">
-    <h3>Adventure Kashmir</h3>
-    <p>Trekking, gondola rides, valleys and offbeat experiences.</p>
-    <p><strong>Starting ₹38,000</strong></p>
-  </div>
-</div>
+      <!-- 3N / 4D -->
+      <div class="card">
+        <img src="assets/images/packages-3n4d.jpg" alt="3N 4D Kashmir Tour">
+        <div class="card-content">
+          <h3>3 Nights / 4 Days Kashmir Tour</h3>
+          <p>Quick trip covering Srinagar, Gulmarg, and Pahalgam.</p>
+          <div class="read-more-content">
+            <p>
+              Perfect for first-time visitors. Includes Shikara ride, Gulmarg Gondola, and guided exploration of the beautiful Lidder valley. Ideal for families and couples seeking a short yet immersive experience.
+            </p>
+          </div>
+          <span class="read-more-btn">Read more</span>
+          <p><strong>Starting from ₹25,000</strong></p>
+          <a href="itinerary.html" class="btn">View Itinerary</a>
+        </div>
+      </div>
 
-<div class="card">
-  <img src="assets/images/package-luxury.jpg">
-  <div class="card-content">
-    <h3>Luxury Escape</h3>
-    <p>Premium hotels, private transport, relaxed pace.</p>
-    <p><strong>Starting ₹55,000</strong></p>
-  </div>
-</div>
+      <!-- 5N / 6D -->
+      <div class="card">
+        <img src="assets/images/packages-5n6d.jpg" alt="5N 6D Kashmir Tour">
+        <div class="card-content">
+          <h3>5 Nights / 6 Days Kashmir Tour</h3>
+          <p>Extended exploration covering major valleys and cultural experiences.</p>
+          <div class="read-more-content">
+            <p>
+              Includes Srinagar, Gulmarg, Pahalgam, Sonmarg, and Yusmarg. Experience houseboat stay, local cuisine, trekking, and scenic drives. Balanced itinerary with adventure and relaxation.
+            </p>
+          </div>
+          <span class="read-more-btn">Read more</span>
+          <p><strong>Starting from ₹45,000</strong></p>
+          <a href="itinerary.html" class="btn">View Itinerary</a>
+        </div>
+      </div>
 
-<div class="card">
-  <img src="assets/images/package-short.jpg">
-  <div class="card-content">
-    <h3>3N / 4D Short Break</h3>
-    <p>Perfect for quick Kashmir getaways.</p>
-    <p><strong>Starting ₹25,000</strong></p>
-  </div>
-</div>
+      <!-- 7N / 8D -->
+      <div class="card">
+        <img src="assets/images/packages-7n8d.jpg" alt="7N 8D Kashmir Tour">
+        <div class="card-content">
+          <h3>7 Nights / 8 Days Kashmir Tour</h3>
+          <p>Comprehensive trip covering all major destinations in Kashmir.</p>
+          <div class="read-more-content">
+            <p>
+              Explore Srinagar, Gulmarg, Pahalgam, Sonmarg, Doodhpathri, Gurez, and Yusmarg. Full cultural immersion, adventure activities, local experiences, and luxury stays. Ideal for travelers wanting a complete Kashmir journey.
+            </p>
+          </div>
+          <span class="read-more-btn">Read more</span>
+          <p><strong>Starting from ₹70,000</strong></p>
+          <a href="itinerary.html" class="btn">View Itinerary</a>
+        </div>
+      </div>
 
-<div class="card">
-  <img src="assets/images/package-family.jpg">
-  <div class="card-content">
-    <h3>Family Special</h3>
-    <p>Comfortable, safe, and child-friendly itineraries.</p>
-    <p><strong>Starting ₹32,000</strong></p>
-  </div>
-</div>
+      <!-- Honeymoon Special -->
+      <div class="card">
+        <img src="assets/images/packages-honeymoon.jpg" alt="Kashmir Honeymoon Package">
+        <div class="card-content">
+          <h3>Honeymoon Special</h3>
+          <p>Romantic escapes in Kashmir’s most scenic locations.</p>
+          <div class="read-more-content">
+            <p>
+              Customized romantic itineraries including houseboat stays, private Shikara rides, candlelight dinners, and sunset viewings in Gulmarg and Pahalgam. Perfect for newlyweds seeking privacy and unforgettable memories.
+            </p>
+          </div>
+          <span class="read-more-btn">Read more</span>
+          <p><strong>Starting from ₹60,000</strong></p>
+          <a href="itinerary.html" class="btn">View Itinerary</a>
+        </div>
+      </div>
+
+      <!-- Family Tour -->
+      <div class="card">
+        <img src="assets/images/packages-family.jpg" alt="Kashmir Family Tour">
+        <div class="card-content">
+          <h3>Family Tour</h3>
+          <p>Safe, fun, and memorable trips for families.</p>
+          <div class="read-more-content">
+            <p>
+              Includes family-friendly activities, scenic drives, and comfortable accommodations. Enjoy the serene landscapes of Kashmir together with guided explorations suitable for all ages.
+            </p>
+          </div>
+          <span class="read-more-btn">Read more</span>
+          <p><strong>Starting from ₹55,000</strong></p>
+          <a href="itinerary.html" class="btn">View Itinerary</a>
+        </div>
+      </div>
+
+      <!-- Adventure Kashmir -->
+      <div class="card">
+        <img src="assets/images/packages-adventure.jpg" alt="Adventure Kashmir Tour">
+        <div class="card-content">
+          <h3>Adventure Kashmir</h3>
+          <p>Thrilling experiences across mountains and rivers.</p>
+          <div class="read-more-content">
+            <p>
+              Skiing in Gulmarg, trekking in Sonmarg, river rafting, and guided adventure sports. Designed for travelers seeking adrenaline and scenic beauty combined.
+            </p>
+          </div>
+          <span class="read-more-btn">Read more</span>
+          <p><strong>Starting from ₹65,000</strong></p>
+          <a href="itinerary.html" class="btn">View Itinerary</a>
+        </div>
+      </div>
+
+      <!-- Luxury Escape -->
+      <div class="card">
+        <img src="assets/images/packages-luxury.jpg" alt="Luxury Kashmir Tour">
+        <div class="card-content">
+          <h3>Luxury Escape</h3>
+          <p>Premium experiences with luxury accommodations and private guides.</p>
+          <div class="read-more-content">
+            <p>
+              Exclusive stays in houseboats and 5-star resorts, private tours, chauffeur-driven vehicles, and curated fine-dining experiences. Ideal for travelers seeking comfort and indulgence.
+            </p>
+          </div>
+          <span class="read-more-btn">Read more</span>
+          <p><strong>Starting from ₹1,20,000</strong></p>
+          <a href="itinerary.html" class="btn">View Itinerary</a>
+        </div>
+      </div>
 
     </div>
   </div>
 </section>
 
 <footer class="footer">
-  <p>© 2026 JustTheRoutes</p>
+  <p>© 2026 JustTheRoutes – Your Gateway to Timeless Journeys</p>
 </footer>
 
-  <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">
-  WhatsApp
-</a>
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">WhatsApp</a>
 
 </body>
 </html>
-
-
-
-
-
-
