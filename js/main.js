@@ -17,3 +17,13 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+document.querySelectorAll(".read-more-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const content = btn.previousElementSibling;
+    content.classList.toggle("open");
+    btn.textContent = content.classList.contains("open")
+      ? "Read less"
+      : "Read more";
+  });
+});
