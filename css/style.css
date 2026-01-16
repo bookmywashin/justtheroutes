@@ -119,6 +119,13 @@ body {
   opacity: 0.95;
 }
 
+.page-hero-content {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 30px 40px;
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+}
+
 /* ===============================
    CARD GRID
 ================================ */
@@ -248,3 +255,4 @@ form button {
     margin-right: 15px;
   }
 }
+
