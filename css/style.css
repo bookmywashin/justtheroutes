@@ -328,3 +328,64 @@ button {
     display: block;
   }
 }
+
+/* ABOUT PAGE STYLING */
+.about-content {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr; /* Text wider than image */
+  gap: 50px;
+  align-items: start;
+  padding: 60px 0;
+}
+
+.about-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.about-text h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--green);
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  color: #1f2933;
+  text-align: justify;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    margin-top: 30px;
+  }
+
+  .about-text h2 {
+    font-size: 32px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+}
