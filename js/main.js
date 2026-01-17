@@ -106,11 +106,6 @@ document.querySelectorAll(".faq-question").forEach(button => {
     }
   });
 });
-setTimeout(() => {
-  document.getElementById("lead-popup").style.display = "flex";
-}, 8000);
 
-document.getElementById("closePopup").onclick = () => {
-  document.getElementById("lead-popup").style.display = "none";
-};
+
 
