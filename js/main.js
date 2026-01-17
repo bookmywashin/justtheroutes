@@ -79,33 +79,27 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* ===============================
-   FAQ TOGGLE
+   FAQ ACCORDION (FIXED)
 ================================ */
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".faq-question").forEach(q => {
-    q.addEventListener("click", () => {
-      q.classList.toggle("active");
-      const answer = q.nextElementSibling;
-      answer.style.maxHeight
-        ? answer.style.maxHeight = null
-        : answer.style.maxHeight = answer.scrollHeight + "px";
+document.addEventListener("DOMContentLoaded", function () {
+  const faqButtons = document.querySelectorAll(".faq-question");
+
+  faqButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const answer = button.nextElementSibling;
+
+      button.classList.toggle("active");
+
+      if (answer.style.maxHeight) {
+        answer.style.maxHeight = null;
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
     });
   });
 });
 
-// FAQ Accordion
-document.querySelectorAll(".faq-question").forEach(button => {
-  button.addEventListener("click", () => {
-    const answer = button.nextElementSibling;
-    button.classList.toggle("active");
 
-    if (answer.style.maxHeight) {
-      answer.style.maxHeight = null;
-    } else {
-      answer.style.maxHeight = answer.scrollHeight + "px";
-    }
-  });
-});
 
 
 
