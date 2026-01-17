@@ -527,17 +527,15 @@ textarea {
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-  z-index: 1001; /* make sure it’s above contact bar */
-  top: -12px;    /* moves logo upwards to overlap contact bar */
+  position: absolute; /* let it stay visually centered */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .logo-img {
-  height: 60px; /* bigger than before */
+  height: 80px; /* adjust as needed */
   width: auto;
+  background: none;
 }
 
 .logo-text {
@@ -546,6 +544,7 @@ textarea {
   color: white;
   font-weight: 700;
 }
+
 
 
 
