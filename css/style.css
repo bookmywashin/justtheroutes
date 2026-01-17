@@ -415,3 +415,78 @@ textarea {
   }
 }
 
+/* ===============================
+   HERO SLIDER
+================================ */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.hero-slide {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+}
+
+/* ===============================
+   DESTINATION CAROUSEL (SCROLL)
+================================ */
+.destination-carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 280px;
+  overflow-x: auto;
+  gap: 24px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.destination-carousel .card {
+  scroll-snap-align: start;
+}
+
+/* ===============================
+   FAQ
+================================ */
+.faq-item {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 12px;
+}
+
+.faq-question {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px;
+}
+
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-size: 22px;
+}
+
+.faq-question.active::after {
+  content: "–";
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  font-size: 16px;
+  color: #4b5563;
+  margin-top: 10px;
+}
+
