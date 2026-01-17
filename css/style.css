@@ -51,7 +51,8 @@ body {
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(90deg, var(--green), var(--blue));
-  padding: 14px 30px;
+  padding: 20px 30px;
+  height: 90px;
 }
 
 /* Left text */
@@ -570,4 +571,5 @@ textarea {
   color: #374151;
   line-height: 1.7;
 }
+
 
