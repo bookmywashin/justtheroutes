@@ -509,19 +509,23 @@ textarea {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px; /* space between logo and text */
+  gap: 10px;
+  position: relative;
+  z-index: 1001; /* make sure it’s above contact bar */
+  top: -12px;    /* moves logo upwards to overlap contact bar */
 }
 
 .logo-img {
-  height: 40px; /* adjust according to your logo */
+  height: 60px; /* bigger than before */
   width: auto;
 }
 
 .logo-text {
   font-family: 'Playfair Display', serif;
-  font-size: 22px;
+  font-size: 28px; /* bigger text too */
   color: white;
-  font-weight: 600;
+  font-weight: 700;
 }
+
 
 
