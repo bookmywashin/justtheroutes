@@ -57,8 +57,8 @@ body {
   background: linear-gradient(
     90deg,
     var(--green) 0%,       /* left side dark */
-    #e0f0ea 48%,           /* start light center */
-    #e0f0ea 52%,           /* end light center */
+    #e0f0ea 50%,           /* start light center */
+    #e0f0ea 50%,           /* end light center */
     var(--blue) 100%        /* right side dark */
   );
   position: relative;
@@ -585,6 +585,7 @@ textarea {
   color: #374151;
   line-height: 1.7;
 }
+
 
 
 
