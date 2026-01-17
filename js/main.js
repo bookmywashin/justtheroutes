@@ -93,3 +93,24 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// FAQ Accordion
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    button.classList.toggle("active");
+
+    if (answer.style.maxHeight) {
+      answer.style.maxHeight = null;
+    } else {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    }
+  });
+});
+setTimeout(() => {
+  document.getElementById("lead-popup").style.display = "flex";
+}, 8000);
+
+document.getElementById("closePopup").onclick = () => {
+  document.getElementById("lead-popup").style.display = "none";
+};
+
