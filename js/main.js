@@ -55,3 +55,41 @@ const contactBar = document.getElementById("contact-bar");
 if(contactBar){
   contactBar.innerHTML = '<marquee>Call: +91-XXXXXXXXXX | WhatsApp: +91-XXXXXXXXXX | Email: info@justtheroutes.com</marquee>';
 }
+/* ===============================
+   HERO SLIDER (AUTO)
+================================ */
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".hero-slide");
+  let currentSlide = 0;
+
+  if (slides.length > 1) {
+    slides.forEach((slide, index) => {
+      slide.style.opacity = index === 0 ? "1" : "0";
+      slide.style.position = "absolute";
+      slide.style.inset = "0";
+      slide.style.transition = "opacity 1s ease";
+    });
+
+    setInterval(() => {
+      slides[currentSlide].style.opacity = "0";
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].style.opacity = "1";
+    }, 5000);
+  }
+});
+
+/* ===============================
+   FAQ TOGGLE
+================================ */
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".faq-question").forEach(q => {
+    q.addEventListener("click", () => {
+      q.classList.toggle("active");
+      const answer = q.nextElementSibling;
+      answer.style.maxHeight
+        ? answer.style.maxHeight = null
+        : answer.style.maxHeight = answer.scrollHeight + "px";
+    });
+  });
+});
+
