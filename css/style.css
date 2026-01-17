@@ -47,32 +47,77 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: linear-gradient(90deg, var(--green), var(--blue));
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, var(--green), var(--blue));
   padding: 14px 30px;
 }
 
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 22px;
+/* Left text */
+.navbar-left {
   color: white;
   font-weight: 600;
+  font-size: 18px;
+  font-family: 'Playfair Display', serif;
 }
 
-nav a {
-  margin-left: 20px;
+/* Center logo */
+.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-img {
+  height: 80px; /* adjust size as needed */
+  width: auto;
+  display: block;
+}
+
+/* Right menu */
+.navbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-right a {
   text-decoration: none;
   color: white;
   font-weight: 500;
+  font-size: 16px;
 }
 
+/* Mobile toggle */
 .menu-toggle {
   display: none;
   font-size: 26px;
   color: white;
   cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-right {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    background: linear-gradient(90deg, var(--green), var(--blue));
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    padding: 12px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .navbar-right.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
 
 /* =============================== HERO ================================ */
@@ -525,27 +570,4 @@ textarea {
   color: #374151;
   line-height: 1.7;
 }
-
-.logo {
-  position: absolute; /* let it stay visually centered */
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.logo-img {
-  height: 80px; /* adjust as needed */
-  width: auto;
-  background: none;
-}
-
-.logo-text {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px; /* bigger text too */
-  color: white;
-  font-weight: 700;
-}
-
-
-
-
 
