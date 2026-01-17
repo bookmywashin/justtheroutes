@@ -57,8 +57,8 @@ body {
   background: linear-gradient(
     90deg,
     var(--green) 0%,       /* left side dark */
-    #e0f0ea 45%,           /* start light center */
-    #e0f0ea 55%,           /* end light center */
+    #e0f0ea 48%,           /* start light center */
+    #e0f0ea 52%,           /* end light center */
     var(--blue) 100%        /* right side dark */
   );
   position: relative;
@@ -71,6 +71,7 @@ body {
   font-size: 18px;
   font-family: 'Playfair Display', serif;
   z-index: 2;
+  margin-left: 20px; /* move slightly away from left edge */
 }
 
 /* Center logo */
@@ -92,6 +93,8 @@ body {
   display: flex;
   gap: 20px;
   z-index: 2;
+  margin-right: 20px; /* move slightly away from right edge */
+
 }
 
 .navbar-right a {
@@ -584,6 +587,7 @@ textarea {
   color: #374151;
   line-height: 1.7;
 }
+
 
 
 
