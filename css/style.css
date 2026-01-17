@@ -323,19 +323,39 @@ textarea {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
-/* =============================== WHATSAPP FLOAT ================================ */
-.whatsapp-float {
+/* =============================== Floating buttons ================================ */
+.floating-btn {
   position: fixed;
   bottom: 24px;
-  right: 24px;
-  background: #25d366;
-  color: white;
-  padding: 14px 20px;
+  padding: 14px 22px;
   border-radius: 50px;
   font-weight: 600;
   text-decoration: none;
   z-index: 9999;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.floating-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+/* WhatsApp Button (Green) */
+.whatsapp-btn {
+  right: 24px;
+  background: #25d366;
+  color: white;
+}
+
+/* Book Now Button (Blue / Theme color) */
+.booknow-btn {
+  right: 24px;
+  bottom: 90px; /* above WhatsApp button */
+  background: #0e7490; /* match theme blue */
+  color: white;
+}
+
 
 /* =============================== FOOTER ================================ */
 .footer {
@@ -526,6 +546,7 @@ textarea {
   color: white;
   font-weight: 700;
 }
+
 
 
 
