@@ -506,4 +506,22 @@ textarea {
   line-height: 1.7;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between logo and text */
+}
+
+.logo-img {
+  height: 40px; /* adjust according to your logo */
+  width: auto;
+}
+
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+}
+
 
