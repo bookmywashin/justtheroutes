@@ -68,7 +68,7 @@ body {
 .navbar-left {
   color: white;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 30px;
   font-family: 'Playfair Display', serif;
   z-index: 2;
   margin-left: 20px; /* move slightly away from left edge */
@@ -93,15 +93,13 @@ body {
   display: flex;
   gap: 20px;
   z-index: 2;
-  margin-right: 20px; /* move slightly away from right edge */
-
 }
 
 .navbar-right a {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /* Mobile toggle */
@@ -587,6 +585,7 @@ textarea {
   color: #374151;
   line-height: 1.7;
 }
+
 
 
 
