@@ -455,11 +455,11 @@ textarea {
 /* GLOBAL SPACING FIX */
 .section-white,
 .section-light {
-  padding: 56px 0;
+  padding: 28px 0;
 }
 
 .compact-section {
-  padding: 48px 0;
+  padding: 24px 0;
 }
 
 .section-intro {
@@ -505,4 +505,5 @@ textarea {
   color: #374151;
   line-height: 1.7;
 }
+
 
