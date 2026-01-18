@@ -559,6 +559,12 @@ body {
   }
 }
 
+.brand-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
 
 
 
