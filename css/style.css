@@ -552,6 +552,13 @@ body {
   line-height: 1.7;
 }
 
+/* Hide brand text on mobile to prevent overlap */
+@media (max-width: 768px) {
+  .navbar-left {
+    display: none;
+  }
+}
+
 
 
 
